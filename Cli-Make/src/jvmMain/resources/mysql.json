@@ -1,0 +1,28 @@
+{
+  "test_db": {
+	"test_table": {
+	  "camelName": "testTable",
+	  "comment": "测试表",
+	  "columns": [
+		{
+		  "columnName": "name",
+		  "camelName": "name",
+		  "type": "varchar",
+		  "length": 20,
+		  "isPrimaryKey": false,
+		  "isAutoIncrement": false,
+		  "comment": "姓名"
+		},
+		{
+		  "columnName": "age",
+		  "camelName": "age",
+		  "type": "int",
+		  "length": 11,
+		  "isPrimaryKey": false,
+		  "isAutoIncrement": false,
+		  "comment": "年龄"
+		}
+	  ]
+	}
+  }
+}

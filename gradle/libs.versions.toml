@@ -1,0 +1,113 @@
+[versions]
+druidVersion = "1.2.20"
+mybatisPlusBootStarterVersion = "3.5.5-SNAPSHOT"
+p6spyVersion = "3.9.1"
+guavaVersion = "33.0.0-jre"
+prometheusVersion = "1.12.0"
+jsoupVersion = "1.17.1"
+nettyVersion = "4.1.104.Final"
+knife4jVersion = "4.4.0"
+rocketmqVersion = "2.2.3"
+minioVersion = "8.5.7"
+redissonVersion = "3.25.0"
+hutoolVersion = "5.8.16"
+springdocOpenapiVersion = "2.3.0"
+mybatisVersion = "3.5.15"
+freemarkerVersion= "2.3.32"
+gsonVersion = "2.10.1"
+mysqlVersion = "8.0.33"
+exposedVersion = "0.46.0"
+
+kotlinxCoroutinesCoreVersion = "1.7.2"
+kotlinxSerializationJsonVersion = "1.6.1"
+kotlinxIoCoreVersion = "0.3.0"
+kotlinxDatetimeVersion = "0.5.0"
+kotlinVersion = "1.9.20"
+lombokVersion = "1.18.30"
+mapstructVersion = "1.5.5.Final"
+kotlinLoggingVersion = "6.0.1"
+slf4jSimpleVersion="2.0.10"
+
+springBootVersion = "3.2.0"
+springCloudVersion = "2022.0.0"
+springCloudAlibabaVersion = "2022.0.0"
+nativeVersion = "0.9.28"
+
+[libraries]
+# bom依赖
+bom-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlinVersion" }
+bom-guava = { group = "com.google.guava", name = "guava-bom", version.ref = "guavaVersion" }
+bom-knife4j = { group = "com.github.xiaoymin", name = "knife4j-dependencies", version.ref = "knife4jVersion" }
+bom-hutool = { group = "cn.hutool", name = "hutool-bom", version.ref = "hutoolVersion" }
+# plugin-bom
+bom-kotlinPlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+bom-kotlinSerilizationPlugin = { group = "org.jetbrains.kotlin.plugin.serialization", name = "org.jetbrains.kotlin.plugin.serialization.gradle.plugin", version.ref = "kotlinVersion" }
+bom-nativePlugin = { group = "org.graalvm.buildtools.native", name = "org.graalvm.buildtools.native.gradle.plugin", version.ref = "nativeVersion" }
+bom-springBootPlugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version.ref = "springBootVersion" }
+bom-dependencyManagementPlugin = { group = "io.spring.gradle", name = "dependency-management-plugin", version =  "1.1.4"}
+bom-quarkusPlugin = { group = "io.quarkus", name = "gradle-application-plugin", version = "3.6.4" }
+bom-dokkaPlugin = { group = "org.jetbrains.dokka", name = "dokka-gradle-plugin", version = "1.9.10" }
+
+# spring依赖
+bom-springBoot = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBootVersion" }
+bom-springCloud = { group = "org.springframework.cloud", name = "spring-cloud-dependencies", version.ref = "springCloudVersion" }
+bom-springCloudAlibaba = { group = "org.springframework.cloud", name = "spring-cloud-alibaba-dependencies", version.ref = "springCloudAlibabaVersion" }
+
+# 业务依赖
+druid = { group = "com.alibaba", name = "druid-spring-boot-3-starter", version.ref = "druidVersion" }
+mybatisPlusBootStarter = { group = "com.baomidou", name = "mybatis-plus-spring-boot3-starter", version.ref = "mybatisPlusBootStarterVersion" }
+p6spy = { group = "p6spy", name = "p6spy", version.ref = "p6spyVersion" }
+micrometerRegistryPrometheus = { group = "io.micrometer", name = "micrometer-registry-prometheus", version.ref = "prometheusVersion" }
+jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoupVersion" }
+nettyAll = { group = "io.netty", name = "netty-all", version.ref = "nettyVersion" }
+rocketmqSpringBootStarter = { group = "org.apache.rocketmq", name = "rocketmq-spring-boot-starter", version.ref = "rocketmqVersion" }
+minio = { group = "io.minio", name = "minio", version.ref = "minioVersion" }
+redissonSpringBootStarter = { group = "org.redisson", name = "redisson-spring-boot-starter", version.ref = "redissonVersion" }
+hutoolAll = { group = "cn.hutool", name = "hutool-all", version.ref = "hutoolVersion" }
+springdocOpenapiStarterWebmvcUi = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version.ref = "springdocOpenapiVersion" }
+mybatis = { group = "org.mybatis", name = "mybatis", version.ref = "mybatisVersion" }
+freemarker ={ group = "org.freemarker", name = "freemarker", version.ref = "freemarkerVersion" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+mysql = { group = "mysql", name = "mysql-connector-java", version.ref = "mysqlVersion" }
+exposedCore = { group = "org.jetbrains.exposed", name = "exposed-core", version.ref = "exposedVersion" }
+exposedJdbc = { group = "org.jetbrains.exposed", name = "exposed-jdbc", version.ref = "exposedVersion" }
+
+
+# 通用依赖
+kotlinStdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib"}
+kotlinUtilIo = { group = "org.jetbrains.kotlin", name = "kotlin-util-io" }
+kotlinxCoroutinesCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCoreVersion" }
+kotlinxSerializationJson = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJsonVersion" }
+kotlinxIoCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-io-core",version.ref = "kotlinxIoCoreVersion"}
+kotlinxDatetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetimeVersion" }
+kotlinLogging = { group = "io.github.oshai", name = "kotlin-logging", version.ref = "kotlinLoggingVersion" }
+slf4jSimple = { group = "org.slf4j", name = "slf4j-simple", version.ref = "slf4jSimpleVersion" }
+mapstruct = { group = "org.mapstruct", name = "mapstruct", version.ref = "mapstructVersion" }
+mapstructProcessor = { group = "org.mapstruct", name = "mapstruct-processor", version.ref = "mapstructVersion" }
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombokVersion" }
+
+# test依赖
+test-kotlin= { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5" }
+
+[bundles]
+tools=[
+    "kotlinStdlib",
+    "kotlinUtilIo",
+    "kotlinxCoroutinesCore",
+    "kotlinxSerializationJson",
+    "kotlinxIoCore",
+    "kotlinxDatetime",
+    "kotlinLogging",
+    "slf4jSimple"
+]
+plugin=[
+    "bom-kotlinPlugin",
+    "bom-kotlinSerilizationPlugin",
+    "bom-nativePlugin",
+    "bom-springBootPlugin",
+    "bom-dependencyManagementPlugin",
+    "bom-quarkusPlugin",
+    "bom-dokkaPlugin"
+]
+[plugins]
+

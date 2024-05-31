@@ -1,0 +1,17 @@
+{
+  "tips":"该模板需要设置db属性，用于生成数据库相关的文件,请进入meta.json文件添加db,设置完以后可以先ws ref刷新数据",
+  "db":[ ],
+  "share":{
+    "title":"share测试tile",
+    "header":"share测试header",
+    "content":"share测试content"
+  },
+  "templateFiles":[
+    {
+      "file":"E:\\Project\\Demo\\Wshake\\.\\test4\\common\\test.java.ftl",
+      "tips":"该字段用于提示,没有实际作用",
+      "foreach":"mysql",
+      "fileName":"${mysql.key}.java"
+    }
+  ]
+}

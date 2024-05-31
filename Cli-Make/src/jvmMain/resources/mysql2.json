@@ -1,0 +1,32 @@
+{
+  "test_db": {
+	"dbName": "test_db",
+	"upCamelName": "TestDb",
+	"lowCamelName": "testDb",
+	"test_table": {
+	  "tableName": "test_table",
+	  "lowCamelName": "testTable",
+	  "upCamelName": "TestTable",
+	  "comment": "测试表",
+	  "columns": [
+		{
+		  "columnName": "id",
+		  "lowCamelName": "id",
+		  "upCamelName": "Id",
+		  "typeInt": -5,
+		  "typeName": "BIGINT",
+		  "typeJavaName": "Long",
+		  "typeKotlinName": "Long",
+		  "typeKotlinClassName": null,
+		  "typeJavaClassName": null,
+		  "nullable": false,
+		  "size": 19,
+		  "isPrimaryKey": true,
+		  "isAutoIncrement": true,
+		  "defaultValue": null,
+		  "comment": "商品id"
+		}
+	  ]
+	}
+  }
+}

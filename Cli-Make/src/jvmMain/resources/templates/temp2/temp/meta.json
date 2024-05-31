@@ -1,0 +1,17 @@
+{
+  "tips":"该模板需要设置db属性，用于生成数据库相关的文件,请进入meta.json文件添加db,设置完以后可以先ws ref刷新数据",
+  "db": ["mysql"],
+  "share":{
+    "title":"share测试tile",
+    "header":"share测试header",
+    "content":"share测试content"
+  },
+  "templateFiles": [
+    {
+      "tips": null,
+      "filePath": "E:\\Project\\Demo\\Wshake\\Cli-Make\\build\\install\\Cli-Make-shadow\\lib\\templates\\temp\\common\\test.java.ftl",
+      "foreach": null,
+      "fileName": null
+    }
+  ]
+}

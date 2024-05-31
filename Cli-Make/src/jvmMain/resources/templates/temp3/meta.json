@@ -1,0 +1,26 @@
+{
+  "tips": "该模板需要设置db属性，用于生成数据库相关的文件,请进入meta.json文件添加db,设置完以后可以先ws ref刷新数据",
+  "db": [
+    "mysql"
+  ],
+  "share": {
+    "title": "share测试tile",
+    "header": "share测试header",
+    "content": "share测试content",
+    "test": null
+  },
+  "templateFiles": [
+    {
+      "tips": "改模板用于循环生成",
+      "filePath": "E:\\Project\\Demo\\Wshake\\.\\test5\\common\\test.java.ftl",
+      "foreach": "mysql.order.tables",
+      "fileName": "${foreach.tableName}.java"
+    },
+    {
+      "tips": null,
+      "filePath": "E:\\Project\\Demo\\Wshake\\.\\test5\\utils\\test2.java.ftl",
+      "foreach": null,
+      "fileName": null
+    }
+  ]
+}
